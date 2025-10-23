@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-app-container
-        image: raian2209/hello-app:v0.1.0
+        image: raian2209/hello-app:v0.1.1
         ports:
         - containerPort: 80
