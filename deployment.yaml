@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-app-container
-        image: SEU_DOCKER_USERNAME/hello-app:latest # Este valor será substituído pelo pipeline
+        image: raian2209/hello-app:v0.1.2
         ports:
         - containerPort: 80
