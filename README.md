@@ -1,7 +1,3 @@
-# manifestsCI-PythonAPI
-
------
-
 # Repositório de Manifestos Kubernetes (GitOps)
 
 Este repositório atua como a **única fonte da verdade** para o estado desejado da nossa aplicação no cluster Kubernetes. Ele contém todos os manifestos declarativos necessários para a implantação e é gerenciado através de um fluxo de trabalho GitOps.
@@ -40,9 +36,9 @@ O processo de implantação é totalmente automatizado e centrado neste reposit�
 
 5.  **Merge e Sincronização do ArgoCD:**
     a. Uma vez que o Pull Request é mesclado (merged) na branch `main`, o ArgoCD, que está constantemente monitorando este repositório, detecta a alteração.
-    b. Como a política de sincronização está configurada para `Automated`, o ArgoCD inicia imediatamente o processo de sincronização. [2]
+    b. Como a política de sincronização está configurada para `Automated`, o ArgoCD inicia imediatamente o processo de sincronização. 
 
-6.  **Implantação no Kubernetes:** O ArgoCD aplica o novo manifesto ao cluster Kubernetes, que por sua vez realiza um *rolling update*, substituindo os Pods antigos pelos novos com a imagem atualizada, **sem downtime**. [3]
+6.  **Implantação no Kubernetes:** O ArgoCD aplica o novo manifesto ao cluster Kubernetes, que por sua vez realiza um *rolling update*, substituindo os Pods antigos pelos novos com a imagem atualizada, **sem downtime**. 
 
 ## 🚀 Gerenciamento de Implantações
 
